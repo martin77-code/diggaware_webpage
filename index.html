@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diggaware.com – Innovative Mobile & Software Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(34, 197, 94, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-500 selection:text-slate-950">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center font-black text-slate-950 text-xl shadow-lg">
+                    D
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white">digga<span class="text-brand-500">ware</span>.com</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#features" class="hover:text-brand-400 transition-colors">Features</a>
+                <a href="#digga-app" class="hover:text-brand-400 transition-colors">DIGGA Quiz</a>
+                <a href="#about" class="hover:text-brand-400 transition-colors">Philosophie</a>
+                <a href="#contact" class="hover:text-brand-400 transition-colors">Kontakt</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#digga-app" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl transition-all shadow-md shadow-brand-500/20">
+                    Live Demo <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#features" class="block py-2 text-slate-300 hover:text-brand-400 font-medium">Features</a>
+            <a href="#digga-app" class="block py-2 text-slate-300 hover:text-brand-400 font-medium">DIGGA Quiz</a>
+            <a href="#about" class="block py-2 text-slate-300 hover:text-brand-400 font-medium">Philosophie</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-brand-400 font-medium">Kontakt</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+            <!-- Background Gradients -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-600/15 rounded-full blur-[120px] pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-brand-400 mb-8 shadow-inner">
+                    <span class="flex h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
+                    <span>Next-Gen Mobile & Software Engineering</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight max-w-4xl mx-auto leading-[1.1]">
+                    Wir erschaffen Software, die <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-200">bewegt.</span>
+                </h1>
+                
+                <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                    diggaware.com entwickelt hochskalierbare Mobile Apps, smarte Cloud-Software und interaktive Lern-Tools wie <span class="text-white font-semibold">DIGGA</span> – für zukunftsweisende digitale Erlebnisse.
+                </p>
+
+                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold transition-all shadow-xl shadow-brand-500/20 flex items-center justify-center">
+                        Projekt anfragen <i class="fa-solid fa-chevron-right ml-2 text-sm"></i>
+                    </a>
+                    <a href="#digga-app" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold border border-slate-800 transition-all flex items-center justify-center">
+                        <i class="fa-solid fa-gamepad mr-2 text-brand-400"></i> DIGGA Quiz testen
+                    </a>
+                </div>
+
+                <!-- Hero Visual / Dashboard Preview Mockup -->
+                <div class="mt-16 relative max-w-5xl mx-auto rounded-2xl bg-slate-900/80 border border-slate-800/80 p-3 glow-effect">
+                    <div class="bg-slate-950 rounded-xl p-4 sm:p-8 overflow-hidden border border-slate-800/50">
+                        <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-3 h-3 rounded-full bg-rose-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                            </div>
+                            <span class="text-xs text-slate-500 font-mono">diggaware-ecosystem.core</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                            <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-4">
+                                    <i class="fa-solid fa-mobile-screen-button text-lg"></i>
+                                </div>
+                                <h3 class="text-white font-semibold mb-1">Mobile Native Apps</h3>
+                                <p class="text-sm text-slate-400">High-Performance iOS & Android Anwendungen mit nahtloser UX.</p>
+                            </div>
+                            <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+                                    <i class="fa-solid fa-brain text-lg"></i>
+                                </div>
+                                <h3 class="text-white font-semibold mb-1">Microlearning & Quiz</h3>
+                                <p class="text-sm text-slate-400">Interaktive Gamification-Plattformen wie das DIGGA-Quiz.</p>
+                            </div>
+                            <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-4">
+                                    <i class="fa-solid fa-cloud text-lg"></i>
+                                </div>
+                                <h3 class="text-white font-semibold mb-1">Cloud Architecture</h3>
+                                <p class="text-sm text-slate-400">Ausfallsichere Backends und moderne Web-SaaS-Plattformen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-slate-900/40 border-t border-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Unsere Kernkompetenzen</h2>
+                    <p class="mt-4 text-slate-400 text-lg">Maßgeschneiderte Software-Architektur für höchste Ansprüche an Performance, Skalierbarkeit und Design.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition-all group">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Cross-Platform Apps</h3>
+                        <p class="text-slate-400 leading-relaxed text-sm">Entwicklung zukunftsfähiger Apps mit modernsten Frameworks für maximale Reichweite auf allen Endgeräten.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition-all group">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">DIGGA Microlearning</h3>
+                        <p class="text-slate-400 leading-relaxed text-sm">Unser Flaggschiff-Vokabel-Quiz-Tool macht Wissensvermittlung spielerisch, intuitiv und extrem effektiv.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition-all group">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Enterprise Security</h3>
+                        <p class="text-slate-400 leading-relaxed text-sm">Höchste Sicherheitsstandards und Datenschutz-konforme Software-Lösungen 'Made in Germany'.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="digga-app" class="py-24 bg-slate-950 relative overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-900/10 via-slate-950 to-slate-950 pointer-events-none"></div>
+            
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-12">
+                    <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Interaktive Demo</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 tracking-tight">DIGGA Vokabel-Quiz Modul</h2>
+                    <p class="mt-2 text-slate-400">Teste direkt hier einen Auszug aus unserer interaktiven Lernplattform.</p>
+                </div>
+
+                <!-- Quiz Widget Card -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative">
+                    <div id="quiz-container">
+                        <!-- Progress bar -->
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span id="question-counter">Frage 1 von 3</span>
+                            <span id="score-display">Punkte: 0</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2 rounded-full mb-8 overflow-hidden">
+                            <div id="progress-bar" class="bg-brand-500 h-full w-1/3 transition-all duration-300"></div>
+                        </div>
+
+                        <!-- Question Box -->
+                        <div class="mb-8">
+                            <h3 id="question-text" class="text-xl sm:text-2xl font-semibold text-white mb-6">
+                                Was bedeutet der Begriff "Responsive Design" in der Softwareentwicklung?
+                            </h3>
+
+                            <div id="options-container" class="space-y-3">
+                                <!-- Options populated via JS -->
+                            </div>
+                        </div>
+
+                        <!-- Result message -->
+                        <div id="quiz-feedback" class="hidden p-4 rounded-xl mb-6 text-sm font-medium"></div>
+
+                        <button id="next-btn" onclick="nextQuestion()" class="hidden w-full py-3.5 bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold rounded-xl transition-all shadow-lg shadow-brand-500/20">
+                            Nächste Frage <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+
+                    <!-- Quiz Finished State -->
+                    <div id="quiz-finished" class="hidden text-center py-8">
+                        <div class="w-16 h-16 bg-brand-500/10 text-brand-400 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Quiz erfolgreich beendet!</h3>
+                        <p id="final-score-text" class="text-slate-400 mb-6">Du hast 3 von 3 Fragen richtig beantwortet.</p>
+                        <button onclick="resetQuiz()" class="px-6 py-3 bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold rounded-xl transition-all shadow-md">
+                            Erneut spielen <i class="fa-solid fa-rotate-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-slate-900/30 border-t border-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Philosophie</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 tracking-tight">Innovation trifft auf sauberen Code.</h2>
+                        <p class="mt-6 text-slate-400 leading-relaxed">
+                            Bei <span class="text-white font-semibold">diggaware.com</span> glauben wir daran, dass komplexe Software für Endnutzer mühelos bedienbar sein muss. Unser Team aus Entwicklern und Designern verbindet technische Exzellenz mit echtem User-Fokus.
+                        </p>
+                        <div class="mt-8 space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-check text-xs"></i>
+                                </div>
+                                <p class="text-slate-300 text-sm"><strong class="text-white">Clean Architecture:</strong> Nachhaltiger, erweiterbarer und stabiler Code.</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-check text-xs"></i>
+                                </div>
+                                <p class="text-slate-300 text-sm"><strong class="text-white">Agile Umsetzung:</strong> Schnelle Iterationen und enge Abstimmung mit Kunden.</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-check text-xs"></i>
+                                </div>
+                                <p class="text-slate-300 text-sm"><strong class="text-white">User-Centric Design:</strong> Oberflächen, die intuitiv begeistern.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="bg-gradient-to-tr from-brand-600/20 to-emerald-400/20 p-1 rounded-3xl glow-effect">
+                            <div class="bg-slate-900 rounded-[22px] p-8 sm:p-10 border border-slate-800 text-center">
+                                <i class="fa-solid fa-code text-5xl text-brand-400 mb-6"></i>
+                                <blockquote class="text-xl italic text-slate-200 mb-6 font-medium">
+                                    "Software ist wie ein Witz: Wenn man ihn erklären muss, ist er schlecht."
+                                </blockquote>
+                                <div class="text-sm font-semibold text-white">Das diggaware Engineering Team</div>
+                                <div class="text-xs text-slate-500 mt-1">Exzellenz in Mobile & Web</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-slate-950 border-t border-slate-900">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Kontakt</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 tracking-tight">Lass uns dein Projekt starten</h2>
+                    <p class="mt-2 text-slate-400">Egal ob Mobile App, Custom Software oder DIGGA-Integration – sprich uns an.</p>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-12 shadow-2xl">
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Dein Name</label>
+                                <input type="text" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-brand-500 transition-colors" placeholder="Max Mustermann">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">E-Mail-Adresse</label>
+                                <input type="email" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-brand-500 transition-colors" placeholder="max@beispiel.de">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Projektart / Interesse</label>
+                            <select class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white focus:outline-none focus:border-brand-500 transition-colors">
+                                <option>Mobile App Entwicklung (iOS / Android)</option>
+                                <option>DIGGA Vokabel-Quiz & Microlearning</option>
+                                <option>Individuelle Software-Lösung</option>
+                                <option>Allgemeine Anfrage</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Deine Nachricht</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-brand-500 transition-colors" placeholder="Erzähl uns von deiner Idee..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold rounded-xl transition-all shadow-lg shadow-brand-500/20">
+                            Nachricht senden <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success Message Box -->
+                    <div id="form-success" class="hidden mt-6 p-4 rounded-xl bg-brand-500/10 border border-brand-500/30 text-brand-400 text-center font-medium">
+                        Vielen Dank! Deine Nachricht wurde erfolgreich übermittelt. Wir melden uns zeitnah bei dir.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center font-black text-slate-950 text-base shadow">
+                    D
+                </div>
+                <span class="text-lg font-bold text-white">digga<span class="text-brand-500">ware</span>.com</span>
+            </div>
+            
+            <p class="text-sm text-slate-500">
+                &copy; 2026 diggaware.com. Alle Rechte vorbehalten.
+            </p>
+
+            <div class="flex space-x-6 text-slate-400">
+                <a href="#" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-github text-lg"></i></a>
+                <a href="#" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-x-twitter text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Quiz Logic for DIGGA App
+        const quizData = [
+            {
+                question: "Was bedeutet der Begriff 'Responsive Design' in der Softwareentwicklung?",
+                options: [
+                    "Design, das auf verschiedenen Bildschirmgrößen optimal funktioniert",
+                    "Eine App, die auf Sprachbefehle reagiert",
+                    "Besonders schnelle Server-Antwortzeiten"
+                ],
+                correct: 0
+            },
+            {
+                question: "Welcher Vorteil steht bei Microlearning-Apps wie DIGGA im Vordergrund?",
+                options: [
+                    "Lange Lerneinheiten am Stück von 4 Stunden",
+                    "Häppchenweises Lernen in kurzen Sequenzen für maximalen Wissenserhalt",
+                    "Ausschließlich Offline-Nutzung ohne Updates"
+                ],
+                correct: 1
+            },
+            {
+                question: "Welches Ziel verfolgt diggaware.com bei der Software-Konzeption?",
+                options: [
+                    "Komplexe Benutzeroberflächen ohne Struktur",
+                    "Skalierbare, performante und nutzerzentrierte digitale Erlebnisse",
+                    "Ausschließliche Nutzung von veralteten Programmiersprachen"
+                ],
+                correct: 1
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let answered = false;
+
+        function loadQuiz() {
+            answered = false;
+            const q = quizData[currentQuestionIndex];
+            document.getElementById('question-counter').innerText = `Frage ${currentQuestionIndex + 1} von ${quizData.length}`;
+            document.getElementById('score-display').innerText = `Punkte: ${score}`;
+            document.getElementById('progress-bar').style.width = `${((currentQuestionIndex + 1) / quizData.length) * 100}%`;
+            document.getElementById('question-text').innerText = q.question;
+            
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+            
+            q.options.forEach((opt, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-brand-500/50 text-slate-200 text-sm font-medium transition-all';
+                btn.innerHTML = `<span class="inline-block w-6 h-6 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-400 text-center leading-6 mr-3">${String.fromCharCode(65 + index)}</span> ${opt}`;
+                btn.onclick = () => selectOption(index, btn);
+                optionsContainer.appendChild(btn);
+            });
+
+            document.getElementById('quiz-feedback').classList.add('hidden');
+            document.getElementById('next-btn').classList.add('hidden');
+        }
+
+        function selectOption(selectedIndex, buttonElement) {
+            if (answered) return;
+            answered = true;
+
+            const q = quizData[currentQuestionIndex];
+            const feedbackBox = document.getElementById('quiz-feedback');
+            const optionsButtons = document.getElementById('options-container').children;
+
+            if (selectedIndex === q.correct) {
+                score++;
+                buttonElement.className = 'w-full text-left p-4 rounded-xl bg-brand-500/10 border border-brand-500 text-brand-400 text-sm font-medium transition-all';
+                feedbackBox.className = 'p-4 rounded-xl mb-6 text-sm font-medium bg-brand-500/10 border border-brand-500/30 text-brand-400';
+                feedbackBox.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i> Richtig! Hervorragende Leistung.';
+            } else {
+                buttonElement.className = 'w-full text-left p-4 rounded-xl bg-rose-500/10 border border-rose-500 text-rose-400 text-sm font-medium transition-all';
+                optionsButtons[q.correct].className = 'w-full text-left p-4 rounded-xl bg-brand-500/10 border border-brand-500 text-brand-400 text-sm font-medium transition-all';
+                feedbackBox.className = 'p-4 rounded-xl mb-6 text-sm font-medium bg-rose-500/10 border border-rose-500/30 text-rose-400';
+                feedbackBox.innerHTML = '<i class="fa-solid fa-circle-xmark mr-2"></i> Leider falsch. Das war nicht ganz korrekt.';
+            }
+
+            feedbackBox.classList.remove('hidden');
+            document.getElementById('score-display').innerText = `Punkte: ${score}`;
+
+            if (currentQuestionIndex < quizData.length - 1) {
+                document.getElementById('next-btn').classList.remove('hidden');
+            } else {
+                setTimeout(() => {
+                    document.getElementById('quiz-container').classList.add('hidden');
+                    document.getElementById('quiz-finished').classList.remove('hidden');
+                    document.getElementById('final-score-text').innerText = `Du hast ${score} von ${quizData.length} Fragen richtig beantwortet!`;
+                }, 1200);
+            }
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            loadQuiz();
+        }
+
+        function resetQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            document.getElementById('quiz-finished').classList.add('hidden');
+            document.getElementById('quiz-container').classList.remove('hidden');
+            loadQuiz();
+        }
+
+        // Initialize Quiz on load
+        window.onload = function() {
+            loadQuiz();
+        };
+
+        // Contact Form Mock Submit
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            document.getElementById('contact-form').reset();
+            document.getElementById('form-success').classList.remove('hidden');
+            setTimeout(() => {
+                document.getElementById('form-success').classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
